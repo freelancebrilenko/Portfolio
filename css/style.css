@@ -1,0 +1,309 @@
+/*csslint order-alphabetical: false,
+important: true,
+box-model: false,
+universal-selector : false,
+box-sizing: false,
+outline-none: false
+*/
+
+/*Обнуление*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+:focus, :active {
+  outline: none;
+}
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-size: 14px;
+  line-height: 1;
+}
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a, a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+@font-face {
+  font-family: Century; /* Имя шрифта */
+
+  src: url(../fonts/CenturyGothic.woff); /* Путь к файлу со шрифтом */
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.header {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  background-color: #252733;
+}
+
+.header__body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.header__logo {
+  z-index: 51;
+  flex: 0 0 80px;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+.header__menu-list {
+  display: flex;
+}
+
+.header__menu-item {
+  margin-left: 20px;
+  border-bottom: 2px solid transparent;
+}
+
+.header__menu-link {
+  transition: 0.5s;
+  color: white;
+  font-family: Century;
+  font-size: 16px;
+  line-height: 80px;
+}
+
+.header__menu-link:hover {
+  color: #FF4A57;
+}
+
+.header__mobmenu {
+  position: fixed;
+  z-index: 50;
+  top: -200%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 80px;
+  transition: 0.5s;
+  background-color: #252733;
+}
+
+.active .header__mobmenu {
+  top: 0;
+}
+
+.header__mobmenu-item {
+  text-align: center;
+  line-height: 40px;
+}
+
+.header__mobmenu-item:hover:last-child {
+  background-color: inherit;
+}
+
+.header__mobmenu-link {
+  transition: 0.5s;
+  color: white;
+  font-family: Century, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.header__mobmenu-link:hover {
+  color: #FF4A57;
+}
+
+.header__mob-menu-icon {
+  position: absolute;
+  z-index: 50;
+  right: 0;
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+
+.header__mob-line {
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  transition: 0.5s;
+  background-color: white;
+}
+
+.line-top {
+  top: -5px;
+}
+
+.active .line-top {
+  top: 6px;
+  transform: rotate(45deg);
+  color: #4B5D6E;
+}
+
+.line-middle {
+  top: 3px;
+}
+
+.active .line-middle {
+  opacity: 0;
+}
+
+.line-bottom {
+  bottom: 5px;
+}
+
+.active .line-bottom {
+  top: 6px;
+  transform: rotate(-45deg);
+}
+
+.content {
+  background-color: #24263B;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 550px;
+}
+
+.about__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__title-text {
+  width: 56.25vw;
+  margin-top: 25px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 2.92vw;
+  font-weight: 800;
+}
+
+.about__title-text span {
+  color: #FF4A57;
+}
+
+.about__title-icons {
+  display: flex;
+}
+
+.about__title-icons-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid #FF4A57;
+  border-radius: 50%;
+}
+
+.about__title-icons-block img {
+  width: 20px;
+  height: 20px;
+}
+
+.about__title-icons-block:hover {
+  background-color: #FF4A57;
+}
+
+.about__title-icons-block + .about__title-icons-block {
+  margin-left: 5px;
+}
+
+.about__hero {
+  position: relative;
+  z-index: 1;
+  width: 25vw;
+  height: 25vw;
+  animation-name: abhero;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes abhero {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 30px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+.about__title-button {
+  width: 200px;
+  height: 50px;
+  margin-top: 25px;
+  color: white;
+  border: 1px solid #FF4A57;
+  border-radius: 70px;
+  background-color: #252733;
+  font-family: Century;
+}
+
+.about__title-button:hover {
+  background-color: #FF4A57;
+}
