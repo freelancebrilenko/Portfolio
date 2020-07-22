@@ -10,6 +10,9 @@ box-sizing: false
   .header__menu {
     display: none;
   }
+  .header__logo{
+    flex: 0 0 60px;
+  }
   .header__mob-menu-icon {
     display: block;
   }
