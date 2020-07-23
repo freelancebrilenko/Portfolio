@@ -18,7 +18,6 @@ box-sizing: false
   }
 }
 
-
 @media(max-width: 1110px) {
   .about {
     min-height: 500px;
@@ -48,6 +47,16 @@ box-sizing: false
 @media(max-width:480px) {
   .about__title-text {
     font-size: 20px;
+  }
+  .about__title-button {
+    width: 150px;
+    height: 45px;
+  }
+}
+
+@media(max-width:390px) {
+  .about__title-text {
+    font-size: 16px;
   }
 }
 
