@@ -6,3 +6,5 @@ $('#title__type').typeIt({
      speed: 50,
      nextStringDelay: 150
 });
+
+$('.slider').slick();

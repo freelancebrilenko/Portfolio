@@ -388,3 +388,21 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   font-family: Montserrat;
 }
+
+.portfolio {
+  padding-top: 20px;
+  background-color: #1F2235;
+}
+
+.portfolio__title {
+  padding-top: 30px;
+  text-align: center;
+  color: #FF4A57;
+  font-family: Montserrat;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.portfolio__title span {
+  border-bottom: 2px solid #FF4A57;
+}
