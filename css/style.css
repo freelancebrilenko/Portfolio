@@ -221,7 +221,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 550px;
+  min-height: 500px;
+  padding-top: 100px;
 }
 
 .about__title {
@@ -275,11 +276,12 @@ h1, h2, h3, h4, h5, h6 {
 .about__hero {
   position: relative;
   z-index: 1;
-  width: 25vw;
-  height: 25vw;
+  width: 280px;
+  height: 280px;
   animation-name: abhero;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  margin-bottom: 55px;
 }
 
 @keyframes abhero {

@@ -19,7 +19,7 @@ box-sizing: false
 }
 
 @media(max-width: 1110px) {
-  .about {
+  .about__inner {
     min-height: 500px;
   }
   .about__hero {
@@ -36,7 +36,7 @@ box-sizing: false
 }
 
 @media(max-width:600px) {
-  .about {
+  .about__inner {
     min-height: 400px;
   }
   .about__title-text {
