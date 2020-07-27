@@ -78,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   width: 100%;
+  height: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -214,6 +215,9 @@ h1, h2, h3, h4, h5, h6 {
 .content {
   position: relative;
   overflow: hidden;
+}
+
+.about {
   background-color: #24263B;
 }
 
@@ -278,10 +282,10 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
   width: 280px;
   height: 280px;
+  margin-bottom: 55px;
   animation-name: abhero;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  margin-bottom: 55px;
 }
 
 @keyframes abhero {
@@ -329,8 +333,6 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid #FF4A57;
 }
 
-
-
 .skills__inner {
   display: flex;
   align-items: center;
@@ -346,7 +348,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 50px;
   background-color: #24263B;
 }
-
 
 .skills__block:hover {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -392,19 +393,69 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .portfolio {
-  padding-top: 20px;
   background-color: #1F2235;
 }
 
 .portfolio__title {
-  padding-top: 30px;
+  padding-top: 20px;
   text-align: center;
   color: #FF4A57;
   font-family: Montserrat;
   font-size: 30px;
-  margin-bottom: 20px;
 }
 
 .portfolio__title span {
   border-bottom: 2px solid #FF4A57;
+}
+
+.footer {
+  height: 120px;
+  width: 100%;
+  background-color: #FF4A57;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.footer__icons {
+  display: flex;
+}
+
+.footer__icons-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.footer__icons-block:hover {
+  background-color: #24263B;
+}
+
+.footer__icons-block img{
+  width: 20px;
+  height: 20px;
+}
+
+.footer__icons-block + .footer__icons-block {
+  margin-left: 5px;
+}
+
+.footer__title {
+  margin-top: 10px;
+}
+
+.footer__title p {
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
 }
